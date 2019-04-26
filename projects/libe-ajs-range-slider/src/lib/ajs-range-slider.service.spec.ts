@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { LibeAjsRangeSliderService } from './libe-ajs-range-slider.service';
+import { LibeAjsRangeSliderService } from './ajs-range-slider.service';
 
 describe('LibeAjsRangeSliderService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
