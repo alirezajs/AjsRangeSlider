@@ -1,17 +1,19 @@
 <div class="ajsRangeSlider">
   <div class="ajsRangeSlider-slider" [ngStyle]="{'padding-left':min+'%','padding-right':max+'%'}">
-    <div class="ajsRangeSlider-track" ></div>
+    <div class="ajsRangeSlider-track"></div>
     <span class="limitaion limitaion-start">{{minValue}}</span>
     <span class="limitaion limitaion-end">{{maxValue}}</span>
 
   </div>
-  <div class="output" [ngStyle]="{'left': min-2+'%'}">
-    <p class='text'>{{min}}</p>
-  </div>
-  <div class="thumb" [ngStyle]="{'left': min+'%'}"></div>
+  <div class="objects" appMovableArea >
+    <div #test1 id="test1" class="output" [ngStyle]="{'left': min-2+'%'}">
+      <p class='text'>{{min}}</p>
+    </div>
+    <div class="thumb" [ngStyle]="{'left': min+'%'}" appMovable ></div>
 
-  <div class="output" [ngStyle]="{'left': max+'%'}">
-    <p class='text'>{{max}}</p>
+    <div class="output" [ngStyle]="{'left': max+'%'}">
+      <p class='text'>{{max}}</p>
+    </div>
+    <div class="thumb" [ngStyle]="{'left': max+'%'}" appMovable></div>
   </div>
-  <div class="thumb" [ngStyle]="{'left': max+'%'}"></div>
 </div>
